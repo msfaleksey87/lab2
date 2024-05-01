@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-#define LAB_2_1
-//#define LAB_2_2
+//#define LAB_2_1
+#define LAB_2_2
 //#define LAB_2_3
 //#define LAB_2_4
 //#define LAB_2_5
@@ -184,10 +184,12 @@ int main()
 int main()
 {
     // Массив строк для хранения имен типов
-    string nameType[] = {"bool", "char", "int", "float", "double"};
+    string nameType[] = {"bool", "char", "int", "float", "double", "unsigned int", "unsigned long", "unsigned long long",
+                         "long double", "signed char", "short int", "long long int", "short"};
 
     //Массив для хранения размеров типов
-    size_t sizeType[] = {sizeof (bool), sizeof (char), sizeof (int), sizeof (float), sizeof (double)};
+    size_t sizeType[] = {sizeof (bool), sizeof (char), sizeof (int), sizeof (float), sizeof (double), sizeof (unsigned int), sizeof (unsigned long),
+    sizeof (unsigned long long), sizeof (long double), sizeof (signed char), sizeof (short int), sizeof (long long int), sizeof (short)};
 
     //Вывод размеров типов в байтах
     for(size_t i = 0; i < sizeof (sizeType) / sizeof(sizeType[0]); i++)
